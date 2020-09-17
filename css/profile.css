@@ -1,0 +1,81 @@
+.parent{
+	display: flex;
+	flex-direction: row;
+	/*justify-content: center;*/
+	flex-wrap: nowrap;
+}
+
+/*.l,.m,.r{
+
+	width: 30%;
+	border: 2px solid red;
+	padding: 2%;
+	margin: 1%;
+	text-align: center;
+
+}*/
+
+.parent>div{
+	width: 30%;
+	border: 2px solid red;
+	padding: 2%;
+	margin: 1%;
+	text-align: center;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	border-radius: 20px 20px 20px;
+	box-shadow: 10px 0px 10px 0px green;
+}
+
+img{
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
+a{
+	text-decoration: none;
+	color: green;
+	box-shadow: 2px 2px 2px 2px red;
+	padding: 1%;
+
+}
+/* mobile view minmum width 320 px and max 480 px */
+@media only screen and (min-width:320px) and (max-width: 480px){
+	.parent{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.parent>div{
+	width: 100%;
+	/*border: 2px solid blue;
+	padding: 2%;
+	margin: 1%;
+    text-align: center;
+   border-radius: 20px 20px 20px 20px ;
+   box-shadow: 20px 0px 20px 0px blue;*/
+}
+}
+/* tab view minmum width 481 px and max 760 px */
+@media only screen and (min-width:481px ) and (max-width:768px )
+{
+	.parent{
+		width: 100%;
+	}
+	.parent>div{
+		width: 100%;
+	}
+	body{
+		background: skyblue;
+	}
+}
+/* desktop view minmum width 768 px and max 1024 px */
+@media only screen and (min-width: 769px) and (max-width:1024px){
+	body{
+		background: teal;
+	}
+	img{
+		width: 200px;
+	}
+}
